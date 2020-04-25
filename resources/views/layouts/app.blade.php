@@ -73,7 +73,14 @@
         </nav>
 
         <main class="py-4">
-            @yield('content')
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        @include('layouts._alerts')
+                    </div>
+                </div>
+                @yield('content')
+            </div>
         </main>
     </div>
 </body>
